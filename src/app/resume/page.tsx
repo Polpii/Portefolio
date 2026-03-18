@@ -11,7 +11,7 @@ export default function Resume() {
           </div>
           <div className="mt-4 sm:mt-0">
             <a 
-              href="/resume_2026.pdf" 
+              href="/api/doc/resume_2026.pdf" 
               target="_blank"
               className="inline-flex items-center rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
@@ -42,7 +42,7 @@ export default function Resume() {
             <p><strong>Award:</strong> Winner of the Connect track at <strong>MIT Hard Mode: Hardware AI Hackathon</strong> (2026) with IPheromone</p>
           </div>
           <p className="mt-3">
-            <a href="/Tangible/tangible_co_ideation_submission.pdf" target="_blank" className="text-indigo-600 hover:underline text-sm">
+            <a href="/api/doc/Tangible/tangible_co_ideation_submission.pdf" target="_blank" className="text-indigo-600 hover:underline text-sm">
               View Tangible Co-Ideation submission (DIS 2026) &rarr;
             </a>
           </p>
@@ -259,7 +259,7 @@ export default function Resume() {
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Other Documents</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/Final_Master_Thesis_2022.pdf" target="_blank" className="text-indigo-600 hover:text-indigo-500 hover:underline flex items-center gap-2 text-sm">
+              <a href="/api/doc/Final_Master_Thesis_2022.pdf" target="_blank" className="text-indigo-600 hover:text-indigo-500 hover:underline flex items-center gap-2 text-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                   <path d="M3 3.5A1.5 1.5 0 014.5 2h6.879a1.5 1.5 0 011.06.44l4.122 4.12A1.5 1.5 0 0117 7.622V16.5a1.5 1.5 0 01-1.5 1.5h-11A1.5 1.5 0 013 16.5v-13z" />
                 </svg>

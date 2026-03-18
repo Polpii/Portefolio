@@ -61,7 +61,7 @@ export const portfolioProjects: PortfolioProject[] = [
     links: [
       {
         label: "Open submission PDF",
-        href: "/Tangible/tangible_co_ideation_submission.pdf",
+        href: "/api/doc/Tangible/tangible_co_ideation_submission.pdf",
       },
     ],
     highlights: [
@@ -238,7 +238,7 @@ export const portfolioProjects: PortfolioProject[] = [
     links: [
       {
         label: "Open project PDF",
-        href: "/SecondSelf/SecondSelf.pdf",
+        href: "/api/doc/SecondSelf/SecondSelf.pdf",
       },
     ],
     highlights: [
@@ -431,7 +431,7 @@ export const portfolioProjects: PortfolioProject[] = [
     links: [
       {
         label: "Open manuscript PDF",
-        href: "/Retouche/CHI2026_ReTouche.pdf",
+        href: "/api/doc/Retouche/CHI2026_ReTouche.pdf",
       },
     ],
     highlights: [
@@ -537,7 +537,7 @@ export const portfolioProjects: PortfolioProject[] = [
     links: [
       {
         label: "Open paper draft",
-        href: "/HDEMG/HDEMG_10_2025.pdf",
+        href: "/api/doc/HDEMG/HDEMG_10_2025.pdf",
       },
       {
         label: "Watch demo video",
@@ -629,7 +629,7 @@ export const portfolioProjects: PortfolioProject[] = [
     links: [
       {
         label: "Open paper PDF",
-        href: "/RhythmKaraoke/CHI_2025.pdf",
+        href: "/api/doc/RhythmKaraoke/CHI_2025.pdf",
       },
     ],
     highlights: [

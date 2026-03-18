@@ -31,7 +31,7 @@ export default function Publications() {
               Structured Observation (CSO).
             </p>
             <a
-              href="/Retouche/CHI2026_ReTouche.pdf"
+              href="/api/doc/Retouche/CHI2026_ReTouche.pdf"
               target="_blank"
               className="mt-3 inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
             >
@@ -64,7 +64,7 @@ export default function Publications() {
               ideation.
             </p>
             <a
-              href="/Tangible/tangible_co_ideation_submission.pdf"
+              href="/api/doc/Tangible/tangible_co_ideation_submission.pdf"
               target="_blank"
               className="mt-3 inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
             >
@@ -92,7 +92,7 @@ export default function Publications() {
               the PhD thesis.
             </p>
             <a
-              href="/RhythmKaraoke/Rhythm%20Karaoke_22july2025.pdf"
+              href="/api/doc/RhythmKaraoke/Rhythm Karaoke_22july2025.pdf"
               target="_blank"
               className="mt-3 inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
             >
@@ -116,7 +116,7 @@ export default function Publications() {
               Montréal Forced Aligner).
             </p>
             <a
-              href="/RhythmKaraoke/CHI_2025.pdf"
+              href="/api/doc/RhythmKaraoke/CHI_2025.pdf"
               target="_blank"
               className="mt-3 inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
             >

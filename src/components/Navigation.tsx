@@ -28,7 +28,7 @@ export default function Navigation() {
               About
             </Link>
             <a
-              href="/resume_2026.pdf"
+              href="/api/doc/resume_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 rounded-full border border-gray-200 px-4 py-1.5 text-sm font-medium text-gray-700 transition hover:border-gray-400"
@@ -72,7 +72,7 @@ export default function Navigation() {
               About
             </Link>
             <a
-              href="/resume_2026.pdf"
+              href="/api/doc/resume_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}

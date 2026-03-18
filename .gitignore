@@ -41,3 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 public/Retouche/ReTouche.mp4
+
+# Private documents - served via /api/doc/ route
+public/**/*.pdf
+public/*.pdf

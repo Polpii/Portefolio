@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Prevent indexing of raw document files
+Disallow: /*.pdf$
+Disallow: /Retouche/*.pdf$
+Disallow: /HDEMG/*.pdf$
+Disallow: /RhythmKaraoke/*.pdf$
+Disallow: /Tangible/*.pdf$
+Disallow: /FingerSpies/*.pdf$
+Disallow: /SecondSelf/*.pdf$
+
+Sitemap: https://www.paulpeterarslan.com/sitemap.xml

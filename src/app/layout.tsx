@@ -6,11 +6,6 @@ export const metadata: Metadata = {
   title: "Paul-Peter Arslan",
   description:
     "Portfolio spanning embodied AI, interaction design, neurorehabilitation research, and experimental systems.",
-  icons: {
-    icon: "/polpii.png",
-    shortcut: "/polpii.png",
-    apple: "/polpii.png",
-  },
 };
 
 export default function RootLayout({

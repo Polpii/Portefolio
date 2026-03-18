@@ -150,15 +150,17 @@ export default function About() {
       <section className="border-t border-gray-100 bg-gray-50/50">
         <div className="mx-auto max-w-5xl px-6 py-16 lg:px-8">
           <h2 className="text-sm font-medium uppercase tracking-widest text-gray-400">
-            Collaborations &amp; Affiliations
+            Collaborations
           </h2>
           <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3 text-sm text-gray-600">
             <span>MIT Media Lab</span>
-            <span>Sorbonne University</span>
-            <span>Institute for Future Technologies IFT</span>
-            <span>Institute of Psychiatry and Neuroscience of Paris | INSERM IPNP</span>
-            <span>Paris Brain Institute research teams</span>
+            <span className="text-gray-300">·</span>
+            <span>IPNP — Institute of Psychiatry and Neuroscience of Paris</span>
+            <span className="text-gray-300">·</span>
+            <span>Paris Brain Institute</span>
+            <span className="text-gray-300">·</span>
             <span>KTH Royal Institute of Technology, Sweden</span>
+            <span className="text-gray-300">·</span>
             <span>University of Oxford</span>
           </div>
         </div>

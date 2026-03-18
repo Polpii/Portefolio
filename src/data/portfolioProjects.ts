@@ -433,10 +433,6 @@ export const portfolioProjects: PortfolioProject[] = [
         label: "Open manuscript PDF",
         href: "/Retouche/CHI2026_ReTouche.pdf",
       },
-      {
-        label: "Watch demo video",
-        href: "/Retouche/ReTouche.mp4",
-      },
     ],
     highlights: [
       "Projects situated, sensorimotor, and social representations directly onto the piano.",
@@ -452,9 +448,9 @@ export const portfolioProjects: PortfolioProject[] = [
         ],
         media: [
           {
-            type: "video",
-            src: "/Retouche/ReTouche.mp4",
-            alt: "ReTouche demo video",
+            type: "image",
+            src: "/Retouche/DSCF3763.JPG",
+            alt: "ReTouche setup in use",
           },
           {
             type: "image",

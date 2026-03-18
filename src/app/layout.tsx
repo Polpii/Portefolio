@@ -3,7 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
-  title: "Paul-Peter Arslan | Embodied AI and Interaction Design",
+  title: "Paul-Peter Arslan",
   description:
     "Portfolio spanning embodied AI, interaction design, neurorehabilitation research, and experimental systems.",
 };

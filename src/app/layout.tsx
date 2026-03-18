@@ -6,6 +6,19 @@ export const metadata: Metadata = {
   title: "Paul-Peter Arslan",
   description:
     "Portfolio spanning embodied AI, interaction design, neurorehabilitation research, and experimental systems.",
+  openGraph: {
+    title: "Paul-Peter Arslan | Embodied AI and Interaction Design",
+    description:
+      "Portfolio spanning embodied AI, interaction design, neurorehabilitation research, and experimental systems.",
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Paul-Peter Arslan | Embodied AI and Interaction Design",
+    description:
+      "Portfolio spanning embodied AI, interaction design, neurorehabilitation research, and experimental systems.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

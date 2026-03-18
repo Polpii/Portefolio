@@ -30,7 +30,7 @@ export default function Navigation() {
             <a
               href="/api/doc/resume_2026.pdf"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="ml-2 rounded-full border border-gray-200 px-4 py-1.5 text-sm font-medium text-gray-700 transition hover:border-gray-400"
             >
               CV
@@ -74,7 +74,7 @@ export default function Navigation() {
             <a
               href="/api/doc/resume_2026.pdf"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               onClick={() => setOpen(false)}
               className="rounded-lg px-3 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-gray-50"
             >

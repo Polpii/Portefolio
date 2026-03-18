@@ -616,14 +616,14 @@ export const portfolioProjects: PortfolioProject[] = [
     tagline:
       "A data-rich timing platform connecting musical structure, imitation, and motor precision.",
     preview: {
-      type: "video",
-      src: "/RhythmKaraoke/Rhythm Karaoke.mp4",
-      alt: "Preview video for Rhythm Karaoke",
+      type: "image",
+      src: "/RhythmKaraoke/heroPick.JPG",
+      alt: "Preview image for Rhythm Karaoke",
     },
     hero: {
-      type: "video",
-      src: "/RhythmKaraoke/Rhythm Karaoke.mp4",
-      alt: "Rhythm Karaoke demo video",
+      type: "image",
+      src: "/RhythmKaraoke/heroPick.JPG",
+      alt: "Hero image for Rhythm Karaoke",
     },
     tags: ["Motor Timing", "Measurement", "Music", "Behavioral Research"],
     links: [
@@ -656,6 +656,13 @@ export const portfolioProjects: PortfolioProject[] = [
         title: "Study framing",
         description: [
           "The project examines how melody, semantic content, and feedback shape rhythmic precision and user experience. That makes it both a measurement contribution and a design question about what kinds of stimuli best sustain performance.",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/RhythmKaraoke/system.jpg",
+            alt: "Rhythm Karaoke system setup",
+          },
         ],
       },
     ],

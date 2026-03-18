@@ -118,6 +118,12 @@ export default function ThreeCircleHero() {
               Projects
             </Link>
             <Link
+              href="/resume"
+              className="text-gray-500 transition hover:text-gray-950"
+            >
+              Resume
+            </Link>
+            <Link
               href="/publications"
               className="text-gray-500 transition hover:text-gray-950"
             >

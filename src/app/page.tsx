@@ -25,7 +25,7 @@ export default function Home() {
       <section className="border-t border-gray-100 py-12">
         <div className="mx-auto max-w-6xl px-5 sm:px-6 lg:px-8">
           <p className="text-sm font-medium text-gray-400 mb-4">
-            Collaborations &amp; affiliations
+            Collaborations
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-600">
             <span>MIT Media Lab</span>

@@ -229,7 +229,7 @@ export default function Resume() {
                 <li><strong>French:</strong> Native</li>
                 <li><strong>English:</strong> Fluent (academic writing &amp; presentations)</li>
                 <li><strong>Spanish:</strong> Conversational</li>
-                <li><strong>Lebanese:</strong></li>
+                <li><strong>Lebanese:</strong> Comprehension</li>
               </ul>
             </div>
           </div>

@@ -41,7 +41,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Tangible Co-Ideation: Designing Embodied Prompting for Creative Thinking with Large Language Models",
     eyebrow: "Embodied Prompting",
     year: "2026",
-    status: "Submitted to the ACM Designing Interactive Systems 2026 Student Design Competition",
+    status: "Finalist at ACM DIS 2026 Student Design Competition; submitted to ACM UIST 2026",
     summary:
       "A tangible ideation system that turns prompting into a spatial, physical design activity instead of a linear chat exchange.",
     tagline:

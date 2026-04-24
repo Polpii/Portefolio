@@ -43,7 +43,7 @@ export default function Resume() {
           </div>
           <p className="mt-3">
             <a href="/api/doc/Tangible/tangible_co_ideation_submission.pdf" target="_blank" className="text-indigo-600 hover:underline text-sm">
-              View Tangible Co-Ideation submission (DIS 2026) &rarr;
+              View Tangible Co-Ideation submission (DIS 2026 finalist · UIST 2026) &rarr;
             </a>
           </p>
         </section>
@@ -69,7 +69,6 @@ export default function Resume() {
                 <div>
                   <h4 className="text-lg font-bold text-gray-900">Master Degree in Innovation, Research & Manufacturing</h4>
                   <p className="text-gray-600">IFT ESILV Leonard da Vinci Engineering School, Paris</p>
-                  <p className="text-sm text-gray-500 mt-1">GPA: 3.2 / 4</p>
                   <p className="text-sm text-gray-500 mt-1">
                     Relevant Coursework: Advanced Algorithms, Big Data Infrastructure, Deep Machine Learning, Computer Graphics, Soft and Active Matter.
                   </p>
@@ -105,9 +104,11 @@ export default function Resume() {
               </div>
               <p className="text-gray-700 italic mb-3">Institute for Future Technologies / Neuroscience Institute Paris</p>
               <ul className="list-disc list-inside text-gray-600 space-y-2 text-sm leading-relaxed">
-                <li><strong>HD-EMG & AI:</strong> Developed continuous proportional decoding of finger forces using 224-channel HD-EMG and CNN-LSTM architectures (R² &gt; 0.75).</li>
+                <li><strong>HD-EMG & AI:</strong> Finger-force decoding from 224-channel HD-EMG using Transformer (FITLight) and GRU architectures (R² &gt; 0.75).</li>
                 <li><strong>ReTouche:</strong> Designed an AR piano learning system with embodied feedback; validated via comparative study (n=18) and autoethnography.</li>
                 <li><strong>Rhythm Karaoke:</strong> Created a high-resolution metrics engine for fine motor timing precision using the Dextrain Manipulandum.</li>
+                <li><strong>Tangible Co-Ideation (embodied prompting):</strong> Finalist, ACM DIS 2026 Student Design Competition; submitted to ACM UIST 2026.</li>
+                <li>2nd-author contributions across papers: TMS experiments, haptic feedback, embedded dev., UX interfaces.</li>
               </ul>
             </div>
 
@@ -206,7 +207,7 @@ export default function Resume() {
             <div>
               <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Programming & Tech</h4>
               <div className="flex flex-wrap gap-2">
-                {["Python (PyTorch, TensorFlow, scikit-learn)", "JavaScript/TypeScript (React, Next.js, Node.js)", "C/C++", "C#", "MATLAB", "R", "Arduino & Embedded Systems"].map((skill) => (
+                {["Python (PyTorch, TensorFlow, scikit-learn)", "JavaScript/TypeScript (React, Next.js, Node.js)", "C#", "MATLAB", "R", "Arduino & Embedded Systems"].map((skill) => (
                   <span key={skill} className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-sm font-medium text-gray-700">
                     {skill}
                   </span>
@@ -229,7 +230,6 @@ export default function Resume() {
                 <li><strong>French:</strong> Native</li>
                 <li><strong>English:</strong> Fluent (academic writing &amp; presentations)</li>
                 <li><strong>Spanish:</strong> Conversational</li>
-                <li><strong>Lebanese:</strong> Comprehension</li>
               </ul>
             </div>
           </div>

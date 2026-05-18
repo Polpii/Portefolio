@@ -106,7 +106,7 @@ export default function ThreeCircleHero() {
           </h1>
           <p className="mt-5 text-base leading-7 text-gray-500">
             I design interactions that help people believe in their own
-            potential — from embodied learning systems to AI-augmented
+            potential, from embodied learning systems to AI-augmented
             rehabilitation tools.
           </p>
 

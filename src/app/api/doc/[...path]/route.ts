@@ -23,12 +23,12 @@ export async function GET(
   const { path: pathSegments } = await params;
   const relativePath = pathSegments.join("/");
 
-  // Strict allowlist — never allow path traversal
+  // Strict allowlist: never allow path traversal
   if (!ALLOWED_FILES.has(relativePath)) {
     return new NextResponse("Not found", { status: 404 });
   }
 
-  // Referer check — must come from our own domain
+  // Referer check: must come from our own domain
   const referer = request.headers.get("referer") ?? "";
   const host = request.headers.get("host") ?? "";
   let refererOk = false;

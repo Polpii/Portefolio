@@ -53,7 +53,7 @@ export const portfolioProjects: PortfolioProject[] = [
     },
     hero: {
       type: "video",
-      src: "/Tangible/Tangible co-ideation final video V4.mp4",
+      src: "/Tangible/Tangible_web.mp4",
       alt: "Demonstration video for Tangible Co-Ideation",
       poster: "/Tangible/HeroPick.jpeg",
     },
@@ -128,7 +128,7 @@ export const portfolioProjects: PortfolioProject[] = [
         media: [
           {
             type: "video",
-            src: "/Tangible/Tangible co-ideation final video V4.mp4",
+            src: "/Tangible/Tangible_web.mp4",
             alt: "Tangible Co-Ideation demo video",
             poster: "/Tangible/HeroPick.jpeg",
           },
@@ -152,9 +152,10 @@ export const portfolioProjects: PortfolioProject[] = [
       alt: "Intro image for IPheromone",
     },
     hero: {
-      type: "image",
-      src: "/IPheromone/HeroPick.jpeg",
-      alt: "Hero image showing the IPheromone prototype in use",
+      type: "video",
+      src: "/IPheromone/IPheromone.mp4",
+      alt: "IPheromone demo video",
+      poster: "/IPheromone/HeroPick.jpeg",
     },
     tags: ["Hackathon", "Wearables", "AI Agents", "Physical Computing"],
     links: [
@@ -170,7 +171,7 @@ export const portfolioProjects: PortfolioProject[] = [
     highlights: [
       "Builds user profiles through a voice interview and maps personality to a scent signature.",
       "Runs agent-to-agent compatibility conversations instead of relying on swipe-based interaction.",
-      "Combines a web app, Raspberry Pi wearable, and BLE scent bridge into a single social computing system.",
+      "Combines a web app, Raspberry Pi wearable, and a scent bridge into a single social computing system.",
       "Won the Connect track at MIT Hard Mode in 2026.",
     ],
     sections: [
@@ -196,7 +197,7 @@ export const portfolioProjects: PortfolioProject[] = [
       {
         title: "System architecture",
         description: [
-          "According to the repository, the project has three main pieces: a Next.js web app for profiles and agent logic, a Raspberry Pi wearable client for voice and physical feedback, and a BLE scent bridge that translates web requests into diffuser commands.",
+          "According to the repository, the project has three main pieces: a Next.js web app for profiles and agent logic, a Raspberry Pi wearable client for voice and physical feedback, and a scent bridge that translates web requests into diffuser commands.",
           "This split is one of the strongest parts of the project: the intelligence is distributed across software, hardware, and atmosphere rather than trapped inside a single screen.",
         ],
         media: [
@@ -321,9 +322,10 @@ export const portfolioProjects: PortfolioProject[] = [
       alt: "Preview image for Finger Spies",
     },
     hero: {
-      type: "image",
-      src: "/FingerSpies/HeroPick.png",
-      alt: "Hero image for Finger Spies",
+      type: "video",
+      src: "/FingerSpies/FingerSpies.mp4",
+      alt: "Finger Spies demo video",
+      poster: "/FingerSpies/HeroPick.png",
     },
     tags: ["Game Design", "p5.js", "Physical Interfaces", "Interaction Design"],
     links: [
@@ -423,9 +425,10 @@ export const portfolioProjects: PortfolioProject[] = [
       alt: "Preview image for ReTouche",
     },
     hero: {
-      type: "image",
-      src: "/Retouche/RetoucheTeaser.jpg",
-      alt: "Hero image for ReTouche",
+      type: "video",
+      src: "/Retouche/ReTouche_web.mp4",
+      alt: "ReTouche demo video",
+      poster: "/Retouche/RetoucheTeaser.jpg",
     },
     tags: ["HCI", "Music Learning", "Embodied Feedback", "AI"],
     links: [
@@ -528,10 +531,10 @@ export const portfolioProjects: PortfolioProject[] = [
       alt: "Preview image for HD-EMG AI project",
     },
     hero: {
-      type: "image",
-      src: "/HDEMG/DextrainManipulandum.png",
-      alt: "Dextrain Manipulandum setup for HD-EMG AI project",
-      fit: "contain",
+      type: "video",
+      src: "/HDEMG/demo_S02_FINAL.mp4",
+      alt: "HD-EMG AI demo video",
+      poster: "/HDEMG/DextrainManipulandum.png",
     },
     tags: ["Neurorehabilitation", "Deep Learning", "HD-EMG", "Biomechanics"],
     links: [
@@ -621,9 +624,10 @@ export const portfolioProjects: PortfolioProject[] = [
       alt: "Preview image for Rhythm Karaoke",
     },
     hero: {
-      type: "image",
-      src: "/RhythmKaraoke/heroPick.JPG",
-      alt: "Hero image for Rhythm Karaoke",
+      type: "video",
+      src: "/RhythmKaraoke/Rhythm Karaoke.mp4",
+      alt: "Rhythm Karaoke demo video",
+      poster: "/RhythmKaraoke/heroPick.JPG",
     },
     tags: ["Motor Timing", "Measurement", "Music", "Behavioral Research"],
     links: [

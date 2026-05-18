@@ -155,7 +155,7 @@ export default function About() {
           <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3 text-sm text-gray-600">
             <span>MIT Media Lab</span>
             <span className="text-gray-300">·</span>
-            <span>IPNP — Institute of Psychiatry and Neuroscience of Paris</span>
+            <span>IPNP, Institute of Psychiatry and Neuroscience of Paris</span>
             <span className="text-gray-300">·</span>
             <span>Paris Brain Institute</span>
             <span className="text-gray-300">·</span>

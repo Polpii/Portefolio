@@ -30,15 +30,15 @@ export default function Resume() {
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
             <div>
               <h4 className="font-bold text-gray-900">Visiting Research Student</h4>
-              <p className="text-indigo-800">Massachusetts Institute of Technology (MIT) — Media Lab</p>
+              <p className="text-indigo-800">Massachusetts Institute of Technology (MIT), Media Lab</p>
             </div>
             <span className="text-sm text-indigo-600 font-medium mt-1 sm:mt-0">Current (4 months)</span>
           </div>
           <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-            Working on the <strong>Tangible Co-Ideation</strong> project — designing embodied prompting interfaces for creative thinking with Large Language Models, in collaboration with Prof. Hiroshi Ishii&apos;s Tangible Media Group.
+            Working on the <strong>Tangible Co-Ideation</strong> project: designing embodied prompting interfaces for creative thinking with Large Language Models, in collaboration with Prof. Hiroshi Ishii&apos;s Tangible Media Group.
           </p>
           <div className="mt-3 space-y-1 text-sm text-gray-700">
-            <p><strong>Coursework:</strong> 4.043 Design Studio: Interaction Intelligence — Teleabsence (Prof. Hiroshi Ishii), Design Intelligence (Prof. Marcelo Coelho)</p>
+            <p><strong>Coursework:</strong> 4.043 Design Studio: Interaction Intelligence (Teleabsence, Prof. Hiroshi Ishii); Design Intelligence (Prof. Marcelo Coelho)</p>
             <p><strong>Award:</strong> Winner of the Connect track at <strong>MIT Hard Mode: Hardware AI Hackathon</strong> (2026) with IPheromone</p>
           </div>
           <p className="mt-3">
@@ -56,7 +56,7 @@ export default function Resume() {
             <div className="relative pl-4 border-l-2 border-gray-200">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
                 <div>
-                  <h4 className="text-lg font-bold text-gray-900">Ph.D. — Interaction Design &amp; Neurorehabilitation</h4>
+                  <h4 className="text-lg font-bold text-gray-900">Ph.D. in Interaction Design &amp; Neurorehabilitation</h4>
                   <p className="text-gray-600">Institute for Future Technologies / Neuroscience Institute Paris</p>
                   <p className="text-sm text-gray-500 mt-1">Supervisors: Dr. Xiao Xiao (Institute for Future Technologies / MIT), Dr. Pavel Lindberg (INSERM)</p>
                 </div>
@@ -104,11 +104,12 @@ export default function Resume() {
               </div>
               <p className="text-gray-700 italic mb-3">Institute for Future Technologies / Neuroscience Institute Paris</p>
               <ul className="list-disc list-inside text-gray-600 space-y-2 text-sm leading-relaxed">
-                <li><strong>HD-EMG & AI:</strong> Finger-force decoding from 224-channel HD-EMG using Transformer (FITLight) and GRU architectures (R² &gt; 0.75).</li>
-                <li><strong>ReTouche:</strong> Designed an AR piano learning system with embodied feedback; validated via comparative study (n=18) and autoethnography.</li>
-                <li><strong>Rhythm Karaoke:</strong> Created a high-resolution metrics engine for fine motor timing precision using the Dextrain Manipulandum.</li>
-                <li><strong>Tangible Co-Ideation (embodied prompting):</strong> Finalist, ACM DIS 2026 Student Design Competition; submitted to ACM UIST 2026.</li>
-                <li>2nd-author contributions across papers: TMS experiments, haptic feedback, embedded dev., UX interfaces.</li>
+                <li><strong>Tangible Co-Ideation (co-first author):</strong> Multi-agent LLM system with AI Mentors as LLM-simulated expert perspectives on text and image, grounded by a multimodal RAG knowledge base (OCR, cross-modal retrieval); fine-tuning and prompt engineering align each agent with its persona voice. Related-work module queries arXiv, Semantic Scholar, and CrossRef. Within-subjects user study (N=32, 16 pairs), tangible vs. screen-only. ACM DIS 2026 SDC finalist; submitted to ACM UIST 2026.</li>
+                <li><strong>IPheromone (team project):</strong> Wearable Raspberry Pi system; each user has a personal LLM agent that builds a structured profile from conversation; agents exchange profiles and reason about compatibility, producing match scores. End-to-end functioning prototype on real hardware. Winner, Connect track at MIT Hard Mode Hardware AI Hackathon 2026.</li>
+                <li><strong>HD-EMG Deep Learning:</strong> Continuous finger-force decoding from 224-channel HD-EMG using a causal Transformer (FITLight, FFT-based attention) and a GRU branch (MFTEventGRU); full PyTorch pipeline (dataset, training loop, mixed-precision, hyperparameter sweeps) with low-latency inference for biofeedback.</li>
+                <li><strong>ReTouche:</strong> Projection-AR piano-learning system; mixed-methods evaluation: 3-arm comparative study (n=18), longitudinal autoethnography, expert focus group. ACM CHI 2026.</li>
+                <li><strong>Rhythm Karaoke:</strong> Millisecond-resolution timing engine for fine motor behavior; powers downstream ML feature extraction. Submitted to Springer Nature (Scientific Reports).</li>
+                <li>2nd-author contributions: TMS-based motor mapping, haptic feedback prototypes, embedded firmware, and front-end interfaces for collaborator studies.</li>
               </ul>
             </div>
 
@@ -144,11 +145,12 @@ export default function Resume() {
 
             <div>
               <h4 className="text-lg font-bold text-gray-900">Chess Instructor</h4>
-              <p className="text-sm text-gray-500 mb-2">LCE Chess Club (2007-2018)</p>
+              <p className="text-sm text-gray-500 mb-2">LCE Chess Club, La Ciotat (2007-2018)</p>
               <ul className="list-disc list-inside text-gray-600 space-y-1 text-sm">
-                <li>Certified by the French Federation (DIFF certificate).</li>
+                <li>Certified by the French Chess Federation (DIFF certificate).</li>
                 <li>Instructed a senior class of 10 students.</li>
-                <li>Elo rating: 1880.</li>
+                <li>FIDE Elo rating: 1880 (World Chess Federation).</li>
+                <li>2nd place, PACA Open; 1st place, National IV Team Competition.</li>
               </ul>
             </div>
 
@@ -197,6 +199,18 @@ export default function Resume() {
               </ul>
             </div>
 
+            <div>
+              <div className="flex justify-between items-baseline mb-2">
+                <h4 className="text-lg font-bold text-gray-900">Volunteer, Sales Assistant</h4>
+                <span className="text-sm text-gray-500">Jul 2018</span>
+              </div>
+              <p className="text-gray-700 italic mb-2">Sue Ryder, Oxford, UK</p>
+              <ul className="list-disc list-inside text-gray-600 space-y-1 text-sm">
+                <li>Worked register (cash management, customer interaction).</li>
+                <li>Collected and prepared donations for the shop.</li>
+              </ul>
+            </div>
+
           </div>
         </section>
 
@@ -205,9 +219,9 @@ export default function Resume() {
           <h3 className="text-xl font-bold text-gray-900 mb-6 border-b border-gray-200 pb-2">Skills</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Programming & Tech</h4>
+              <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Machine Learning & AI</h4>
               <div className="flex flex-wrap gap-2">
-                {["Python (PyTorch, TensorFlow, scikit-learn)", "JavaScript/TypeScript (React, Next.js, Node.js)", "C#", "MATLAB", "R", "Arduino & Embedded Systems"].map((skill) => (
+                {["PyTorch", "TensorFlow / Keras", "scikit-learn", "Transformer architectures", "CNN, GRU, LSTM", "Large Language Models", "Retrieval-Augmented Generation (RAG)", "Prompt engineering & multi-agent orchestration", "Signal processing & neural decoding", "Real-time inference pipelines"].map((skill) => (
                   <span key={skill} className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-sm font-medium text-gray-700">
                     {skill}
                   </span>
@@ -215,9 +229,9 @@ export default function Resume() {
               </div>
             </div>
             <div>
-              <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Engineering & Design</h4>
+              <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Software Engineering</h4>
               <div className="flex flex-wrap gap-2">
-                {["Signal Processing & Neural Decoding", "Deep Learning (CNN, LSTM, Transformer)", "CAD & Rapid Prototyping", "Unity", "Git, Docker, Linux"].map((skill) => (
+                {["Python", "TypeScript / JavaScript (React, Next.js, Node.js)", "C#", "MATLAB", "R", "REST APIs", "Git, Docker, Linux", "Unity", "Arduino, Raspberry Pi, embedded firmware", "CAD & rapid prototyping"].map((skill) => (
                   <span key={skill} className="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-sm font-medium text-gray-700">
                     {skill}
                   </span>
@@ -241,15 +255,15 @@ export default function Resume() {
           <div className="space-y-4">
             <div>
               <h4 className="font-bold text-gray-900">Eagles, ESILV US Football Team (2017-2018)</h4>
-              <p className="text-sm text-gray-600">Wide Receiver. University French Champion 2017.</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-gray-900">Slide Session - Ski Association (2017-2019)</h4>
-              <p className="text-sm text-gray-600">Organized travel for 150 students (Paris to Alps), managed logistics and security.</p>
+              <p className="text-sm text-gray-600">Wide Receiver. University French Champion 2017 (US Football Association).</p>
             </div>
             <div>
               <h4 className="font-bold text-gray-900">Sports</h4>
-              <p className="text-sm text-gray-600">Rugby, Skiing, Swimming, Krav Maga (Blue belt, trained with Alain Formaggio).</p>
+              <p className="text-sm text-gray-600">Rugby, Skiing, Swimming, Krav Maga.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-gray-900">Music</h4>
+              <p className="text-sm text-gray-600">Composition with FL Studio (Fruity Loops).</p>
             </div>
           </div>
         </section>

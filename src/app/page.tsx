@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-600">
             <span>MIT Media Lab</span>
             <span className="text-gray-300">·</span>
-            <span>IPNP — Institute of Psychiatry and Neuroscience of Paris</span>
+            <span>IPNP, Institute of Psychiatry and Neuroscience of Paris</span>
             <span className="text-gray-300">·</span>
             <span>Paris Brain Institute</span>
             <span className="text-gray-300">·</span>

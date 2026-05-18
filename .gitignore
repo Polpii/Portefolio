@@ -41,6 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 public/Retouche/ReTouche.mp4
+public/Tangible/Tangible co-ideation final video V4.mp4
 
 # Private documents - served via /api/doc/ route
 public/**/*.pdf

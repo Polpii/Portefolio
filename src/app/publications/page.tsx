@@ -44,7 +44,7 @@ export default function Publications() {
             <div className="flex items-center gap-3 text-xs mb-3">
               <time className="text-gray-400">2026</time>
               <span className="text-gray-500 font-medium">
-                ACM DIS 2026 SDC &middot; Submitted
+                ACM DIS 2026 SDC &middot; Finalist
               </span>
             </div>
             <h3 className="text-lg font-semibold leading-7 text-gray-900">
@@ -100,53 +100,31 @@ export default function Publications() {
             </a>
           </article>
 
-          {/* Enhancing Communication in Speech Therapy */}
-          <article className="border-b border-gray-100 pb-10">
-            <div className="flex items-center gap-3 text-xs mb-3">
-              <time className="text-gray-400">2025</time>
-              <span className="text-gray-500 font-medium">
-                Workshop paper
-              </span>
-            </div>
-            <h3 className="text-lg font-semibold leading-7 text-gray-900">
-              Enhancing Communication in Speech Therapy
-            </h3>
-            <p className="mt-1 text-sm text-gray-500">
-              Auditory-motor synchronization and the AI pipeline (Vocal Remover,
-              Montréal Forced Aligner).
-            </p>
-            <a
-              href="/api/doc/RhythmKaraoke/CHI_2025.pdf"
-              target="_blank"
-              className="mt-3 inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
-            >
-              View draft
-            </a>
-          </article>
-
-          {/* Tangible Prompting — UIST 2026 in prep */}
+          {/* Tangible Prompting — UIST 2026 submitted */}
           <article className="border-b border-gray-100 pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">
               <time className="text-gray-400">2026</time>
               <span className="text-gray-500 font-medium">
-                ACM UIST 2026 &middot; In preparation
+                ACM UIST 2026 &middot; Submitted (Demo accepted at ACM CHI 2026)
               </span>
             </div>
             <h3 className="text-lg font-semibold leading-7 text-gray-900">
               Tangible Prompting: A Physical Vocabulary for Navigating
-              Conceptual Spaces with Generative AI
+              Conceptual Spaces in Human-AI Co-Ideation
             </h3>
             <p className="mt-2 text-sm leading-6 text-gray-600">
-              <strong>Paul-Peter Arslan</strong> et al.
+              Yuqing Lucy Li*, Quincy Kuang*,{" "}
+              <strong>Paul-Peter Arslan</strong>*, Xiao Xiao, Hiroshi Ishii.
             </p>
+            <p className="mt-1 text-sm text-gray-500">* Equal contribution.</p>
           </article>
 
-          {/* HD-EMG + AI — target April */}
+          {/* HD-EMG + AI */}
           <article className="border-b border-gray-100 pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">
-              <time className="text-gray-400">2025</time>
+              <time className="text-gray-400">2026</time>
               <span className="text-gray-500 font-medium">
-                Target: April 2025
+                Nature-family journal &middot; In preparation
               </span>
             </div>
             <h3 className="text-lg font-semibold leading-7 text-gray-900">
@@ -157,17 +135,16 @@ export default function Publications() {
               <strong>Paul-Peter Arslan</strong> et al.
             </p>
             <p className="mt-1 text-sm text-gray-500">
-              224-channel HD-EMG, CNN-LSTM architectures for continuous
-              finger-force decoding.
+              224-channel HD-EMG, causal Transformer (FITLight) and GRU (MFTEventGRU) architectures for continuous finger-force decoding.
             </p>
           </article>
 
           {/* JNER — Rhythm Karaoke Stroke */}
-          <article className="pb-10">
+          <article className="border-b border-gray-100 pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">
-              <time className="text-gray-400">2025</time>
+              <time className="text-gray-400">2026</time>
               <span className="text-gray-500 font-medium">
-                Journal of NeuroEngineering and Rehabilitation &middot; In preparation (Target: April)
+                Journal of NeuroEngineering and Rehabilitation &middot; In preparation
               </span>
             </div>
             <h3 className="text-lg font-semibold leading-7 text-gray-900">
@@ -180,6 +157,53 @@ export default function Publications() {
             <p className="mt-1 text-sm text-gray-500">
               Extension of Rhythm Karaoke to stroke rehabilitation,
               measuring rhythmic finger tapping with the Dextrain Manipulandum.
+            </p>
+          </article>
+
+          {/* Co-authored — Kinésithérapie Scientifique 2025 */}
+          <article className="border-b border-gray-100 pb-10">
+            <div className="flex items-center gap-3 text-xs mb-3">
+              <time className="text-gray-400">2025</time>
+              <span className="text-gray-500 font-medium">
+                Kinésithérapie Scientifique &middot; Published
+              </span>
+            </div>
+            <h3 className="text-lg font-semibold leading-7 text-gray-900">
+              Mécanismes sensoriels de la récupération de la dextérité manuelle après AVC : protocole d&apos;une étude de cohorte prospective
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              Dziezuk, E., <strong>Arslan, P.-P.</strong>, et al.
+            </p>
+          </article>
+
+          {/* Co-authored — IEEE Trans Haptics under review */}
+          <article className="border-b border-gray-100 pb-10">
+            <div className="flex items-center gap-3 text-xs mb-3">
+              <time className="text-gray-400">2026</time>
+              <span className="text-gray-500 font-medium">
+                IEEE Transactions on Haptics &middot; Under review
+              </span>
+            </div>
+            <h3 className="text-lg font-semibold leading-7 text-gray-900">
+              A novel haptic stimulation device to improve finger movements: a validation and reliability study in healthy subjects
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              Dziezuk, E., Badr, L., <strong>Arslan, P.-P.</strong>, et al.
+            </p>
+            <p className="mt-1 text-sm text-gray-500">Submitted Feb. 2026.</p>
+          </article>
+
+          {/* Co-authored — Motor Unit Coherence in prep */}
+          <article className="pb-10">
+            <div className="flex items-center gap-3 text-xs mb-3">
+              <time className="text-gray-400">2026</time>
+              <span className="text-gray-500 font-medium">In preparation</span>
+            </div>
+            <h3 className="text-lg font-semibold leading-7 text-gray-900">
+              Motor Unit Coherence and Discharge Behavior During Single-Finger Isometric Contractions After Stroke
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              Duan, Z., <strong>Arslan, P.-P.</strong>, Plantin, J., Lindberg, P. G., Wang, R.
             </p>
           </article>
         </div>

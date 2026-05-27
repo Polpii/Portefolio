@@ -40,7 +40,8 @@ export async function GET(
       refHost === "www.paulpeterarslan.com" ||
       refHost.endsWith(".vercel.app");
   } catch {
-    refererOk = false;
+    // Allow empty/missing referer = direct navigation (e.g. from a PDF reader or email link)
+    refererOk = referer === "";
   }
 
   if (!refererOk) {

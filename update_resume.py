@@ -67,7 +67,7 @@ PUBS = {
                 ("Arslan, P.-P.", {"bold": True}),
                 (", et al. Predicting Continuous Finger Forces from High-Density EMG with AI Regression Models. In preparation (target: ", {}),
                 ("Nature", {"italic": True}),
-                ("-family journal). [PDF: paulpeterarslan.com/api/doc/HDEMG/HDEMG_10_2025.pdf]", {}),
+                ("-family journal).", {}),
             ],
             [
                 ("Arslan, P.-P.", {"bold": True}),

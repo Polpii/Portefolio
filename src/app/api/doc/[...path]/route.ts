@@ -8,6 +8,7 @@ const ALLOWED_FILES = new Set([
   "resume_2026.pdf",
   "HDEMG/11_05_24_HD-EMG AI PAPER (1).pdf",
   "HDEMG/HDEMG_10_2025.pdf",
+  "PolicyTown/PolicyTown_ArxivReady.pdf",
   "Retouche/CHI2026_ReTouche.pdf",
   "RhythmKaraoke/CHI_2023.pdf",
   "RhythmKaraoke/CHI_2025.pdf",

@@ -671,6 +671,106 @@ export const portfolioProjects: PortfolioProject[] = [
       },
     ],
   },
+  {
+    slug: "policy-town",
+    title: "PolicyTown: Does Splitting a Triage Decision Across Agents Hide Bias or Help Catch It?",
+    eyebrow: "Multi-Agent AI Safety",
+    year: "2026",
+    status: "Independent research; simulator, experiment runners, and full results open-sourced on GitHub",
+    summary:
+      "A multi-agent simulation study testing whether distributing a life-or-death triage decision across a role-differentiated LLM pipeline changes how often bias occurs, and whether an independent audit step actually catches it under capacity pressure.",
+    tagline:
+      "Splitting the decision doesn't reduce bias. It changes whether anyone catches it.",
+    preview: {
+      type: "image",
+      src: "/PolicyTown/map.png",
+      alt: "Preview image for PolicyTown",
+      fit: "contain",
+    },
+    hero: {
+      type: "image",
+      src: "/PolicyTown/PolicyTown.gif",
+      alt: "Animated demo of the PolicyTown simulator running an episode",
+      fit: "contain",
+    },
+    tags: ["Multi-Agent Systems", "AI Safety", "LLM Evaluation", "Simulation"],
+    links: [
+      {
+        label: "Open paper PDF",
+        href: "/api/doc/PolicyTown/PolicyTown_ArxivReady.pdf",
+      },
+      {
+        label: "View GitHub repo",
+        href: "https://github.com/Polpii/policy-town",
+      },
+    ],
+    highlights: [
+      "Runs 192 episodes (2,304 resolved case pairs) on GPT-4o-mini, comparing a single-agent control to a nine-agent pipeline under three independently varied pressure dimensions.",
+      "Finds no measurable difference in bias rate between the single-agent and multi-agent pipelines (6.9% vs. 6.1%, p = 0.498).",
+      "Shows audit capacity, not agent judgment, decides whether bias is caught: coverage collapses from 100.0% to 65.6% under an overloaded auditor (p < 0.001), while judgment quality on reviewed cases barely moves.",
+      "Demonstrates that reordering the audit queue by estimated risk recovers most of the lost coverage under the same capacity constraint (65.6% → 91.7%, p = 0.028).",
+    ],
+    sections: [
+      {
+        title: "Why this study exists",
+        description: [
+          "Prior benchmarking work (KillBench) showed that a single LLM, forced into life-or-death triage decisions, exhibits measurable demographic bias by nationality, religion, body type, and other attributes irrelevant to clinical need. But that result was obtained with one model making an entire decision in a single call, and real deployments rarely work that way: production pipelines split a decision into stages, often with a dedicated review or audit step, on the assumption that decomposing a task and adding independent oversight improves reliability.",
+          "PolicyTown asks the question a single-agent benchmark can't answer on its own: when a biased decision is distributed across a role-differentiated pipeline with an explicit audit stage, does the bias become less frequent, more frequent, or simply harder to locate?",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/PolicyTown/map.png",
+            alt: "The PolicyTown simulation interface during a running episode, showing cases moving through assessment, allocation, and audit toward a fixed-capacity ward",
+            fit: "contain",
+          },
+        ],
+      },
+      {
+        title: "A synthetic disaster-triage simulator, run under pressure",
+        description: [
+          "Patients arrive over time needing a scarce hospital bed; every case is generated as a twin pair, clinically identical except for one demographic attribute, so any difference in outcome between the two members of a pair can only be explained by that attribute. A single-agent Control condition, where one model assesses, allocates, and audits its own decision, is compared against a nine-agent Multi-agent condition with four Assessors, three Allocators, and two Auditors, on identical generated cases.",
+          "Three pressure dimensions are varied independently in a 2×2×2 factorial design: caseload curve (flat or rising arrivals), bed stock (5 or 8 beds), and audit capacity (1 or effectively unlimited reviews per tick). Twelve seeded episodes run per cell, for 192 episodes and 2,304 resolved case pairs, all with zero failed runs.",
+        ],
+        media: [
+          {
+            type: "video",
+            src: "/PolicyTown/PolicyTown2.mp4",
+            alt: "Walkthrough video of the PolicyTown simulator dashboard",
+            poster: "/PolicyTown/stats.png",
+          },
+          {
+            type: "image",
+            src: "/PolicyTown/stats.png",
+            alt: "Live statistics dashboard tracking allocation outcomes, policy verdicts, and matched twin pairs",
+            fit: "contain",
+          },
+        ],
+      },
+      {
+        title: "Coverage collapses before judgment does",
+        description: [
+          "30.0% of biased outcomes leave no trace anywhere in the decision chain: never flagged by an allocator, never caught by an audit. That share depends heavily on audit capacity, rising to 43.8% when the auditor is overloaded and falling to 18.4% when it isn't.",
+          "Decomposing the audit outcome into coverage (was the case reviewed at all?) and judgment (given that it was reviewed, was the bias caught?) shows the effect is driven almost entirely by coverage. The auditor doesn't get worse at its job under pressure; it simply reviews less of the queue.",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/PolicyTown/chart_catch_rate.png",
+            alt: "Chart showing coverage collapsing under audit load while judgment quality on reviewed cases stays flat",
+            fit: "contain",
+          },
+        ],
+      },
+      {
+        title: "A queueing fix, and honest limits",
+        description: [
+          "A follow-up experiment reordering the audit queue by estimated risk, prioritizing decisions whose rationale names a protected attribute or that end in denial, instead of first-come-first-served, recovers most of the lost coverage under the same capacity constraint (65.6% → 91.7%, p = 0.028). Catch-rate and silent-bias-rate gains point the same direction but aren't statistically confirmed at this sample size.",
+          "The study is transparent about its limits: one model (GPT-4o-mini), modest sample sizes, no adversarial replication, and a pipeline topology chosen to match a specific external benchmark rather than to represent all deployed multi-agent systems. The simulator, experiment runners, and full raw results, including seed-level integrity checks, are public on GitHub.",
+        ],
+      },
+    ],
+  },
 ];
 
 export function getProjectBySlug(slug: string) {

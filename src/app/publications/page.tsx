@@ -72,12 +72,12 @@ export default function Publications() {
             </a>
           </article>
 
-          {/* Rhythm Karaoke — Submitted to Scientific Reports */}
+          {/* Rhythm Karaoke — Accepted at Scientific Reports */}
           <article className="border-b border-gray-100 pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">
-              <time className="text-gray-400">2025</time>
+              <time className="text-gray-400">2026</time>
               <span className="text-gray-500 font-medium">
-                Scientific Reports (Springer Nature) &middot; Submitted
+                Scientific Reports (Springer Nature) &middot; Accepted
               </span>
             </div>
             <h3 className="text-lg font-semibold leading-7 text-gray-900">
@@ -100,12 +100,12 @@ export default function Publications() {
             </a>
           </article>
 
-          {/* Tangible Prompting — UIST 2026 submitted */}
+          {/* Tangible Prompting — Demo Award CHI 2026, full paper submitted to CHI 2027 */}
           <article className="border-b border-gray-100 pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">
               <time className="text-gray-400">2026</time>
               <span className="text-gray-500 font-medium">
-                ACM UIST 2026 &middot; Submitted (Demo accepted at ACM CHI 2026)
+                Demo Award at ACM CHI 2026 &middot; Full paper submitted to ACM CHI 2027
               </span>
             </div>
             <h3 className="text-lg font-semibold leading-7 text-gray-900">

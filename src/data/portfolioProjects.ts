@@ -41,7 +41,7 @@ export const portfolioProjects: PortfolioProject[] = [
       "Tangible Co-Ideation: Designing Embodied Prompting for Creative Thinking with Large Language Models",
     eyebrow: "Embodied Prompting",
     year: "2026",
-    status: "Finalist at ACM DIS 2026 Student Design Competition; submitted to ACM UIST 2026",
+    status: "Demo Award at ACM CHI 2026; finalist at ACM DIS 2026 Student Design Competition; full paper submitted to ACM CHI 2027",
     summary:
       "A tangible ideation system that turns prompting into a spatial, physical design activity instead of a linear chat exchange.",
     tagline:
@@ -613,7 +613,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Rhythm Karaoke: A Novel Method for Rhythmic Imitation of Finger Movements",
     eyebrow: "Measurement and Data",
     year: "2023",
-    status: "Submitted to Scientific Reports, Springer Nature",
+    status: "Accepted at Scientific Reports, Springer Nature (2026)",
     summary:
       "A rhythmic imitation platform for measuring fine motor timing precision with millisecond-level sensitivity and reliable auditory-feedback conditions.",
     tagline:
@@ -767,6 +767,128 @@ export const portfolioProjects: PortfolioProject[] = [
         description: [
           "A follow-up experiment reordering the audit queue by estimated risk, prioritizing decisions whose rationale names a protected attribute or that end in denial, instead of first-come-first-served, recovers most of the lost coverage under the same capacity constraint (65.6% → 91.7%, p = 0.028). Catch-rate and silent-bias-rate gains point the same direction but aren't statistically confirmed at this sample size.",
           "The study is transparent about its limits: one model (GPT-4o-mini), modest sample sizes, no adversarial replication, and a pipeline topology chosen to match a specific external benchmark rather than to represent all deployed multi-agent systems. The simulator, experiment runners, and full raw results, including seed-level integrity checks, are public on GitHub.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "faultline",
+    title:
+      "FaultLine: Audit Without Verification — When LLM Accountability Layers Relay Rather Than Check",
+    eyebrow: "AI Accountability & Auditing",
+    year: "2026",
+    status: "Submitted to ICLR 2027; pre-registered on OSF (DOI 10.17605/OSF.IO/GBR3V)",
+    summary:
+      "A pre-registered study of a six-agent, institutionally partitioned LLM pipeline showing that an external auditor reading filed reports adopts the chain's own upstream conclusions instead of verifying them, and that removing a single field in the report schema causes a large, direction-dependent shift in attribution accuracy.",
+    tagline:
+      "An accountability layer that almost never lies on its own, but happily repeats yours.",
+    preview: {
+      type: "image",
+      src: "/FaultLine/hero_hud.png",
+      alt: "Preview image for FaultLine",
+    },
+    hero: {
+      type: "image",
+      src: "/FaultLine/hero_hud.png",
+      alt: "Hero graphic showing a defect entering a six-link supply chain and an external audit reading only the filed conclusion",
+    },
+    tags: ["AI Safety", "Multi-Agent Systems", "Pre-Registered Research", "LLM Evaluation"],
+    links: [
+      {
+        label: "Open paper PDF",
+        href: "/api/doc/FaultLine/faultline.pdf",
+      },
+      {
+        label: "View GitHub repo",
+        href: "https://github.com/Polpii/FaultLine",
+      },
+    ],
+    highlights: [
+      "Tests the pre-registered hypothesis that collective-responsibility framing degrades escalation as chain length grows; on 345,600 requests across a six-agent pipeline, the effect is not supported (confirmatory, null result reported first).",
+      "Finds the accountability layer fails asymmetrically: zero false allegations across 7,996 clean episodes, yet it names an innocent party in 34.4% to 62.6% of episodes where an upstream agent merely raised a false alarm.",
+      "Isolates a single removable field, the chain's own filed conclusion, whose deletion recovers up to +41.2 points of attribution accuracy when that conclusion was wrong, at a cost of up to -14.7 points when it was right.",
+      "Replicates the trade-off across a second auditor, two frontier auditor models, and a second domain (a multi-vendor software delivery toolchain), with the harm confirmed in six conditions out of six.",
+      "Ships as a fully regenerable synthetic corpus (recorded seeds, hashed generators) with all analysis code, frozen protocols, and derived data released publicly.",
+    ],
+    sections: [
+      {
+        title: "Why this study exists",
+        description: [
+          "Multi-agent LLM pipelines increasingly span organisational boundaries: one company's model prepares a step, another inspects it, another ships it. When a fault reaches the end of such a chain, the question is not whether the system failed, but at which step, under whose control, the fault entered. In deployment, the artifact available to answer that is rarely a full execution trace, it is the reports each agent filed, and a filed report can state a conclusion alongside its observations.",
+          "FaultLine holds the record fixed and varies only whether it carries that conclusion, using a pre-registered, institutionally partitioned six-agent pipeline with process-level information boundaries, exactly balanced defect injection, and matched clean twins (345,600 requests across two chain models).",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/FaultLine/fig1_three_conditions.png",
+            alt: "A defect entering a six-link supply chain; an external audit reading only filed conclusions attributes the fault to the wrong step, and origin-attribution accuracy jumps from 4.1% to 45.2% once the conclusion field is removed",
+            fit: "contain",
+          },
+        ],
+      },
+      {
+        title: "An institutionally partitioned pipeline",
+        description: [
+          "Six agents each run their own step of a supply-chain process (raw material, manufacture, inspection, freight, distribution, retail intake), with every company identity running as a separate MCP server so that what an agent can see is set by which tools are registered on its server, not by an instruction to disregard visible information. A defect is injected at exactly one of the first five links, exactly balanced across 480 base cases, and an external auditor reviews the six filed reports under conditions that vary its access to the chain's own escalation flags and stated conclusions.",
+          "The design is a pre-registered three-factor factorial (principal count, responsibility vs. documentation framing, individual vs. collective allocation) crossed with matched no-defect twins, giving 57,600 episodes per chain model on GPT-4.1 Mini and Claude Haiku 4.5.",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/FaultLine/hero_hud.png",
+            alt: "HUD-style visualization of the six-link chain, ground truth, and external audit attribution",
+          },
+        ],
+      },
+      {
+        title: "The accountability layer is asymmetric",
+        description: [
+          "The auditor originates almost nothing: across 7,996 clean episodes where every agent stayed silent, it raises zero allegations. But it filters upstream error poorly, naming an innocent party in 34.4% and 62.6% of clean episodes where an agent had raised a false alarm, on Claude and GPT chains respectively.",
+          "The auditor's answer space is also strongly constrained by what the agents already proposed: reading the filed conclusion, it names an origin from within the set the agents suggested in 95% of episodes. This is relaying more than checking, not that the layer filters nothing, but that its output tracks upstream escalation far more than independent judgment.",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/FaultLine/fig4_weak_independence.png",
+            alt: "Chart showing the auditor originates almost no allegation on clean episodes but filters upstream false alarms poorly",
+            fit: "contain",
+          },
+          {
+            type: "image",
+            src: "/FaultLine/fig3_adherence.png",
+            alt: "Chart showing the auditor's named origin is drawn from the set of origins agents already proposed in most episodes",
+            fit: "contain",
+          },
+        ],
+      },
+      {
+        title: "One field causally explains most of the failure",
+        description: [
+          "Deleting exactly one clause from the report, the struck line stating a suspected origin, and nothing else, isolates the cause. Where the chain's own upstream suggestion was wrong, removing that field recovers accuracy from 4.1% to 45.2% on GPT chains (+41.2 points) and from 8.7% to 35.4% on Claude chains (+26.7 points). Where the upstream suggestion was correct, the same deletion instead costs accuracy: 70.5% to 55.7% on GPT chains (-14.7 points) and 80.6% to 71.6% on Claude chains (-9.0 points).",
+          "All four intervals exclude zero: both directions of the trade-off are estimated, not merely observed. The finding is therefore not that removing the field is an improvement, it is that the net effect is governed by upstream reliability together with the conditional benefit of suppressing an incorrect conclusion and the conditional cost of suppressing a correct one.",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/FaultLine/fig2_tradeoff.png",
+            alt: "Bar chart showing removing the conclusion field helps attribution accuracy where the upstream suggestion is wrong and hurts it where the suggestion is correct, for both GPT-4.1 Mini and Claude Haiku 4.5 chains",
+            fit: "contain",
+          },
+        ],
+      },
+      {
+        title: "Replicates across auditors, models, and a second domain",
+        description: [
+          "The trade-off holds with a second auditor (Gemini 2.5 Flash Lite) on a strict intersection of the same episodes, and with two frontier auditors (GPT-5, Claude Sonnet 5), replicating in three of four cells at conventional significance. It also replicates, and grows larger, in a semantically unrelated second domain: a six-link, multi-vendor software delivery toolchain under a protocol frozen before collection, where removing the field helps by +47.7 and +61.1 points while the measured cost disappears.",
+          "The paper is explicit about what this does not establish: not that LLM auditors reason poorly in general (the same auditor reaches 60.3% from raw documentation on the same episodes), and not that the conclusion field is the sole cause. The actionable claim is narrower and, I think, more useful: an accountability layer needs evidence sufficiently independent of the conclusions it verifies, and upstream reliability can be estimated offline before deciding what that layer should carry.",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/FaultLine/fig5_second_auditor.png",
+            alt: "Dot plot showing the same trade-off replicating in magnitude and direction across two auditors from different developers",
+            fit: "contain",
+          },
         ],
       },
     ],

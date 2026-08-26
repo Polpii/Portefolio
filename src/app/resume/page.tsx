@@ -43,7 +43,7 @@ export default function Resume() {
           </div>
           <p className="mt-3">
             <a href="/api/doc/Tangible/tangible_co_ideation_submission.pdf" target="_blank" className="text-indigo-600 hover:underline text-sm">
-              View Tangible Co-Ideation submission (DIS 2026 finalist · UIST 2026) &rarr;
+              View Tangible Co-Ideation submission (DIS 2026 finalist · CHI 2026 Demo Award) &rarr;
             </a>
           </p>
         </section>
@@ -104,11 +104,11 @@ export default function Resume() {
               </div>
               <p className="text-gray-700 italic mb-3">Institute for Future Technologies / Neuroscience Institute Paris</p>
               <ul className="list-disc list-inside text-gray-600 space-y-2 text-sm leading-relaxed">
-                <li><strong>Tangible Co-Ideation (co-first author):</strong> Multi-agent LLM system with AI Mentors as LLM-simulated expert perspectives on text and image, grounded by a multimodal RAG knowledge base (OCR, cross-modal retrieval); fine-tuning and prompt engineering align each agent with its persona voice. Related-work module queries arXiv, Semantic Scholar, and CrossRef. Within-subjects user study (N=32, 16 pairs), tangible vs. screen-only. ACM DIS 2026 SDC finalist; submitted to ACM UIST 2026.</li>
+                <li><strong>Tangible Co-Ideation (co-first author):</strong> Multi-agent LLM system with AI Mentors as LLM-simulated expert perspectives on text and image, grounded by a multimodal RAG knowledge base (OCR, cross-modal retrieval); fine-tuning and prompt engineering align each agent with its persona voice. Related-work module queries arXiv, Semantic Scholar, and CrossRef. Within-subjects user study (N=32, 16 pairs), tangible vs. screen-only. ACM DIS 2026 SDC finalist; Demo Award at ACM CHI 2026; full paper submitted to ACM CHI 2027.</li>
                 <li><strong>IPheromone (team project):</strong> Wearable Raspberry Pi system; each user has a personal LLM agent that builds a structured profile from conversation; agents exchange profiles and reason about compatibility, producing match scores. End-to-end functioning prototype on real hardware. Winner, Connect track at MIT Hard Mode Hardware AI Hackathon 2026.</li>
                 <li><strong>HD-EMG Deep Learning:</strong> Continuous finger-force decoding from 224-channel HD-EMG using a causal Transformer (FITLight, FFT-based attention) and a GRU branch (MFTEventGRU); full PyTorch pipeline (dataset, training loop, mixed-precision, hyperparameter sweeps) with low-latency inference for biofeedback.</li>
                 <li><strong>ReTouche:</strong> Projection-AR piano-learning system; mixed-methods evaluation: 3-arm comparative study (n=18), longitudinal autoethnography, expert focus group. ACM CHI 2026.</li>
-                <li><strong>Rhythm Karaoke:</strong> Millisecond-resolution timing engine for fine motor behavior; powers downstream ML feature extraction. Submitted to Springer Nature (Scientific Reports).</li>
+                <li><strong>Rhythm Karaoke:</strong> Millisecond-resolution timing engine for fine motor behavior; powers downstream ML feature extraction. Accepted, Scientific Reports (Springer Nature), 2026.</li>
                 <li>2nd-author contributions: TMS-based motor mapping, haptic feedback prototypes, embedded firmware, and front-end interfaces for collaborator studies.</li>
               </ul>
             </div>

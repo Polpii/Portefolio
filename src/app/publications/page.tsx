@@ -119,6 +119,99 @@ export default function Publications() {
             <p className="mt-1 text-sm text-gray-500">* Equal contribution.</p>
           </article>
 
+          {/* PolicyTown — independent research */}
+          <article className="border-b border-gray-100 pb-10">
+            <div className="flex items-center gap-3 text-xs mb-3">
+              <time className="text-gray-400">2026</time>
+              <span className="text-gray-500 font-medium">
+                Independent research &middot; Preprint
+              </span>
+            </div>
+            <h3 className="text-lg font-semibold leading-7 text-gray-900">
+              Does Splitting a Triage Decision Across Agents Hide Bias or Help
+              Catch It? A Multi-Agent Simulation Study of LLM-Based Resource
+              Allocation Under Audit Capacity Constraints
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              <strong>Paul-Peter Arslan</strong>
+            </p>
+            <p className="mt-1 text-sm text-gray-500">
+              192 episodes (2,304 resolved case pairs) on GPT-4o-mini comparing
+              a single-agent control to a nine-agent audited pipeline; audit
+              capacity, not agent count, determines whether bias is caught.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-4">
+              <a
+                href="/api/doc/PolicyTown/PolicyTown_ArxivReady.pdf"
+                target="_blank"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View manuscript
+              </a>
+              <a
+                href="/projects/policy-town"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View project page
+              </a>
+              <a
+                href="https://github.com/Polpii/policy-town"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View code
+              </a>
+            </div>
+          </article>
+
+          {/* FaultLine — independent research, submitted ICLR 2027 */}
+          <article className="border-b border-gray-100 pb-10">
+            <div className="flex items-center gap-3 text-xs mb-3">
+              <time className="text-gray-400">2026</time>
+              <span className="text-gray-500 font-medium">
+                Submitted to ICLR 2027 &middot; Preprint
+              </span>
+            </div>
+            <h3 className="text-lg font-semibold leading-7 text-gray-900">
+              FaultLine: Audit Without Verification &mdash; When LLM
+              Accountability Layers Relay Rather Than Check
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              <strong>Paul-Peter Arslan</strong>
+            </p>
+            <p className="mt-1 text-sm text-gray-500">
+              Pre-registered study of a six-agent, institutionally partitioned
+              LLM pipeline (345,600 requests); an external auditor reading
+              filed reports adopts the chain&apos;s own upstream conclusions
+              instead of verifying them. Pre-registered on OSF (DOI
+              10.17605/OSF.IO/GBR3V).
+            </p>
+            <div className="mt-3 flex flex-wrap gap-4">
+              <a
+                href="/api/doc/FaultLine/faultline.pdf"
+                target="_blank"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View manuscript
+              </a>
+              <a
+                href="/projects/faultline"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View project page
+              </a>
+              <a
+                href="https://github.com/Polpii/FaultLine"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View code
+              </a>
+            </div>
+          </article>
+
           {/* HD-EMG + AI */}
           <article className="border-b border-gray-100 pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">

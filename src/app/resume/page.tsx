@@ -24,18 +24,18 @@ export default function Resume() {
           </div>
         </div>
 
-        {/* Current Affiliation */}
+        {/* MIT research visit (ended May 2026) */}
         <section className="mb-12 bg-indigo-50 p-6 rounded-xl border border-indigo-100">
-          <h3 className="text-xl font-semibold text-indigo-900 mb-2">Current Position</h3>
+          <h3 className="text-xl font-semibold text-indigo-900 mb-2">Research Visit</h3>
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
             <div>
               <h4 className="font-bold text-gray-900">Visiting Research Student</h4>
               <p className="text-indigo-800">Massachusetts Institute of Technology (MIT), Media Lab</p>
             </div>
-            <span className="text-sm text-indigo-600 font-medium mt-1 sm:mt-0">Current (4 months)</span>
+            <span className="text-sm text-indigo-600 font-medium mt-1 sm:mt-0">Until May 2026</span>
           </div>
           <p className="mt-3 text-gray-700 text-sm leading-relaxed">
-            Working on the <strong>Tangible Co-Ideation</strong> project: designing embodied prompting interfaces for creative thinking with Large Language Models, in collaboration with Prof. Hiroshi Ishii&apos;s Tangible Media Group.
+            Worked on the <strong>Tangible Co-Ideation</strong> project: designing embodied prompting interfaces for creative thinking with Large Language Models, in collaboration with Prof. Hiroshi Ishii&apos;s Tangible Media Group.
           </p>
           <div className="mt-3 space-y-1 text-sm text-gray-700">
             <p><strong>Coursework:</strong> 4.043 Design Studio: Interaction Intelligence (Teleabsence, Prof. Hiroshi Ishii); Design Intelligence (Prof. Marcelo Coelho)</p>

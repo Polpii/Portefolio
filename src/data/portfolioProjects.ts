@@ -53,7 +53,7 @@ export const portfolioProjects: PortfolioProject[] = [
     },
     hero: {
       type: "video",
-      src: "/Tangible/Tangible_web.mp4",
+      src: "/Tangible/Tangible_chi27_web.mp4",
       alt: "Demonstration video for Tangible Co-Ideation",
       poster: "/Tangible/HeroPick.jpeg",
     },
@@ -128,9 +128,102 @@ export const portfolioProjects: PortfolioProject[] = [
         media: [
           {
             type: "video",
-            src: "/Tangible/Tangible_web.mp4",
+            src: "/Tangible/Tangible_chi27_web.mp4",
             alt: "Tangible Co-Ideation demo video",
             poster: "/Tangible/HeroPick.jpeg",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "light-language",
+    title: "Light Language Objects: Ambiguity and Otherness in Embodied AI",
+    eyebrow: "Embodied AI & Creative AI",
+    year: "2026",
+    status: "Accepted at the NeurIPS 2026 Creative AI Track; MIT Media Lab collaboration (Lilith Yu, Quincy Kuang, Awu Chen, Paul-Peter Arslan, Marcelo Coelho)",
+    summary:
+      "Three embodied AI lanterns that listen to speech but answer only through color, brightness, rhythm, and movement, asking what kinds of relationships become possible when AI is allowed to remain perceptibly other.",
+    tagline:
+      "An AI that cannot answer in words, so the person has to interpret it.",
+    preview: {
+      type: "image",
+      src: "/LightLanguage/lanterns.jpg",
+      alt: "The three Light Language Objects: Aperture, Frame, and Atmosphere",
+    },
+    hero: {
+      type: "image",
+      src: "/LightLanguage/lanterns.jpg",
+      alt: "The three Light Language Objects, from left: Aperture, Frame, and Atmosphere",
+    },
+    tags: ["Creative AI", "Embodied AI", "Human-AI Interaction", "Research Through Design"],
+    links: [
+      {
+        label: "Open paper PDF",
+        href: "/api/doc/LightLanguage/192_Light_Language_Objects_Amb.pdf",
+      },
+    ],
+    highlights: [
+      "Replaces fluent, humanlike replies with a deliberately low-resolution channel: a language model proposes timed RGB light sequences instead of sentences.",
+      "Introduces a prompt, observe, reveal, save loop where people curate a personal visual vocabulary, without updating model weights.",
+      "Treats each lantern body as a material grammar: the same intended stance looks and feels different through Aperture, Frame, and Atmosphere.",
+      "Built as research through design, with three working lanterns, a shared electronics core, and a browser-based authoring tool.",
+    ],
+    sections: [
+      {
+        title: "Why remove the words",
+        description: [
+          "When AI talks like a person, people tend to treat it like one. Language models match our tone and emotional cues, which can make a hollow or inappropriate response feel personal. Most systems respond by making the model even more humanlike.",
+          "Light Language Objects explore the opposite direction. A person speaks in ordinary language, but the model can only respond through light. The response stays ambiguous, so the person has to interpret it, compare it with earlier ones, and decide whether it is worth keeping.",
+        ],
+        media: [
+          {
+            type: "video",
+            src: "/LightLanguage/LightLanguage_web.mp4",
+            alt: "A person speaking to a Light Language Object, which answers in light",
+            poster: "/LightLanguage/poster.jpg",
+          },
+        ],
+      },
+      {
+        title: "Building a personal light vocabulary",
+        description: [
+          "For each exchange, the model receives the transcribed speech, a short history, previously saved light examples, and a description of the lantern's shell and LED regions. It returns an intended stance and a timed sequence of light frames that drive both an on-screen preview and the physical lantern.",
+          "The authoring tool supports a prompt, observe, reveal, save loop. The person watches a pattern without explanation, can reveal what the model was trying to express, and then saves, revises, or rejects it. Saved expressions become context for future responses, so recurring patterns can become recognizable without turning into a fixed code.",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/LightLanguage/software.jpg",
+            alt: "The Light Language software: Chat view with light responses, and the Gallery of curated patterns",
+            fit: "contain",
+          },
+        ],
+      },
+      {
+        title: "Three bodies, three material grammars",
+        description: [
+          "All three lanterns share the same electronics and software, but their shells change which gestures the model can produce. Aperture breaks light into fragments through stained-glass-like panels. Frame organizes it around the center and edges of a nested quatrefoil. Atmosphere spreads it through an open, branching volume inspired by the Sagrada Família.",
+          "The project does not claim that ambiguity produces empathy. It asks whether a slower, lower-resolution channel can invite curiosity and empathic attention while keeping the AI clearly nonhuman.",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/LightLanguage/aperture.jpg",
+            alt: "Aperture: inspiration, shell details, and light dispersed through patterned panels",
+            fit: "contain",
+          },
+          {
+            type: "image",
+            src: "/LightLanguage/frame.jpg",
+            alt: "Frame: quatrefoil window inspiration, layered shell, and concentric light patterns",
+            fit: "contain",
+          },
+          {
+            type: "image",
+            src: "/LightLanguage/atmosphere.jpg",
+            alt: "Atmosphere: organic architecture inspiration, branching beams, and reflected light",
+            fit: "contain",
           },
         ],
       },
@@ -354,6 +447,80 @@ export const portfolioProjects: PortfolioProject[] = [
             alt: "Dot plot showing the same trade-off replicating in magnitude and direction across two auditors from different developers",
             fit: "contain",
           },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "persistent-partners",
+    title: "Persistent Partners Raise Prices Among Learning Agents",
+    eyebrow: "Multi-Agent Learning & Market Design",
+    year: "2026",
+    status: "arXiv preprint (2609.35402), under review; pre-registered on OSF. With Yubin Kim (MIT) and Xiao Xiao (IFT)",
+    summary:
+      "A pre-registered randomised experiment showing that when a platform keeps the same learning pricing agents paired, profits and prices rise, and that the price rise happens even when agents cannot see, and therefore cannot punish, a rival's price cut.",
+    tagline:
+      "Who an AI agent is matched with can matter as much as what it learns.",
+    preview: {
+      type: "image",
+      src: "/Collusion/poster.jpg",
+      alt: "Preview of the Four Stalls Market animation for Persistent Partners",
+    },
+    hero: {
+      type: "video",
+      src: "/Collusion/Collusion_web.mp4",
+      alt: "Animated explainer: four market stalls where two sellers always face each other and two get a new partner every time",
+      poster: "/Collusion/poster.jpg",
+    },
+    tags: ["Multi-Agent Systems", "AI Safety", "Reinforcement Learning", "Pre-Registered Research"],
+    links: [
+      {
+        label: "Read on arXiv",
+        href: "https://arxiv.org/abs/2609.35402",
+      },
+    ],
+    highlights: [
+      "Keeping the same partner raises average profits by 0.27 of the gap between competitive and monopoly profit (95% CI 0.20 to 0.35), with all twenty paired runs positive: the registered primary result.",
+      "A plain tabular learner reproduces the effect in all 25 further blocks, so it is not specific to one agent architecture.",
+      "When rival prices are hidden, agents cannot see a price cut and cannot punish it, yet the resting price rises as much. A test that only looks for punishment would miss it.",
+      "Exploratory extension: some untrained open language models show the same effect when the rival's price is left out of their prompt.",
+    ],
+    sections: [
+      {
+        title: "Why this study exists",
+        description: [
+          "Pricing is increasingly delegated to learning agents, and on a platform it is the platform, not the sellers, that decides who competes with whom. Most work on algorithmic collusion asks whether agents learn to punish price cuts. This study asks a design question first: does the matching rule itself change the prices agents settle on?",
+          "The experiment randomises three things independently: whether an agent keeps its partner, whether it can see its rival's prices, and whether it can send messages, inside a standard repeated pricing game from the algorithmic collusion literature.",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/Collusion/fig_main.png",
+            alt: "Main results: persistent pairing raises the price level, the registered enforcement test is inconclusive, and price levels over training by condition",
+            fit: "contain",
+          },
+        ],
+      },
+      {
+        title: "Higher prices without visible punishment",
+        description: [
+          "The classic story is that prices stay high because agents learn to retaliate against anyone who undercuts them. Here, the rise survives even when retaliation is impossible: with rival prices hidden, persistent pairs still settle higher, and the rise lasts to the end of training.",
+          "Where rivals are visible, a simple best-response baseline accounts for a large share of what a standard forced-deviation probe reads as punishment. The paper reports the registered punishment test as inconclusive rather than claiming a mechanism it cannot isolate.",
+        ],
+        media: [
+          {
+            type: "image",
+            src: "/Collusion/fig_level_vs_enforcement.png",
+            alt: "Run-level price level plotted against measured enforcement, showing little relationship between them",
+            fit: "contain",
+          },
+        ],
+      },
+      {
+        title: "What it means for platform design",
+        description: [
+          "If matching alone can move prices, auditing pricing agents for punishment strategies is not enough. Who an agent is repeatedly matched with is a lever the platform controls, and it belongs in the evaluation of multi-agent AI systems alongside the agents' own behaviour.",
+          "The study was pre-registered before data collection, and the confirmatory, post hoc, and exploratory results are labelled as such in the paper.",
         ],
       },
     ],
@@ -742,7 +909,7 @@ export const portfolioProjects: PortfolioProject[] = [
     title: "Deep Learning for Real-Time Neural Drive Decoding",
     eyebrow: "Mechanism and Deep Learning",
     year: "2024",
-    status: "Manuscript in preparation",
+    status: "Submitted to IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE)",
     summary:
       "A real-time decoding pipeline that predicts continuous finger forces from 224-channel HD-EMG to bridge raw neural signals and useful motor feedback.",
     tagline:

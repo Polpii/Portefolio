@@ -15,6 +15,7 @@ const ALLOWED_FILES = new Set([
   "RhythmKaraoke/CHI_2025.pdf",
   "RhythmKaraoke/Rhythm Karaoke_22july2025.pdf",
   "SecondSelf/SecondSelf.pdf",
+  "LightLanguage/192_Light_Language_Objects_Amb.pdf",
   "Tangible/tangible_co_ideation_submission.pdf",
 ]);
 

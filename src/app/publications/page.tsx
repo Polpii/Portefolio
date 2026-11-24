@@ -72,6 +72,43 @@ export default function Publications() {
             </a>
           </article>
 
+          {/* NeurIPS 2026 Creative AI Track — Light Language Objects */}
+          <article className="border-b border-gray-100 pb-10">
+            <div className="flex items-center gap-3 text-xs mb-3">
+              <time className="text-gray-400">2026</time>
+              <span className="text-gray-500 font-medium">
+                NeurIPS 2026 Creative AI Track &middot; Accepted
+              </span>
+            </div>
+            <h3 className="text-lg font-semibold leading-7 text-gray-900">
+              Light Language Objects: Ambiguity and Otherness in Embodied AI
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              Lilith Yu, Quincy Kuang, Awu Chen,{" "}
+              <strong>Paul-Peter Arslan</strong>, Marcelo Coelho.
+            </p>
+            <p className="mt-2 text-sm leading-6 text-gray-500">
+              Three embodied AI lanterns that listen to speech but respond only
+              through light, letting people curate a personal visual vocabulary
+              while the AI stays perceptibly nonhuman.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-4">
+              <a
+                href="/api/doc/LightLanguage/192_Light_Language_Objects_Amb.pdf"
+                target="_blank"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View paper
+              </a>
+              <a
+                href="/projects/light-language"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View project page
+              </a>
+            </div>
+          </article>
+
           {/* Rhythm Karaoke — Accepted at Scientific Reports */}
           <article className="border-b border-gray-100 pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">
@@ -88,8 +125,8 @@ export default function Publications() {
               <strong>Paul-Peter Arslan</strong> et al.
             </p>
             <p className="mt-1 text-sm text-gray-500">
-              A stroke-oriented extension is currently in preparation as part of
-              the PhD thesis.
+              A stroke-oriented extension is currently submitted to Scientific
+              Reports.
             </p>
             <a
               href="/api/doc/RhythmKaraoke/Rhythm Karaoke_22july2025.pdf"
@@ -212,12 +249,50 @@ export default function Publications() {
             </div>
           </article>
 
+          {/* Persistent Partners — arXiv preprint, under review */}
+          <article className="border-b border-gray-100 pb-10">
+            <div className="flex items-center gap-3 text-xs mb-3">
+              <time className="text-gray-400">2026</time>
+              <span className="text-gray-500 font-medium">
+                arXiv preprint &middot; Under review
+              </span>
+            </div>
+            <h3 className="text-lg font-semibold leading-7 text-gray-900">
+              Persistent Partners Raise Prices Among Learning Agents
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              <strong>Paul-Peter Arslan</strong>, Yubin Kim, Xiao Xiao.
+            </p>
+            <p className="mt-1 text-sm text-gray-500">
+              Pre-registered randomised experiment: keeping learning pricing
+              agents paired with the same partner raises profits and prices,
+              even when agents cannot see, and so cannot punish, a rival&apos;s
+              price cut.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-4">
+              <a
+                href="https://arxiv.org/abs/2609.35402"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View on arXiv
+              </a>
+              <a
+                href="/projects/persistent-partners"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View project page
+              </a>
+            </div>
+          </article>
+
           {/* HD-EMG + AI */}
           <article className="border-b border-gray-100 pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">
               <time className="text-gray-400">2026</time>
               <span className="text-gray-500 font-medium">
-                Nature-family journal &middot; In preparation
+                IEEE TNSRE &middot; Submitted
               </span>
             </div>
             <h3 className="text-lg font-semibold leading-7 text-gray-900">
@@ -232,12 +307,12 @@ export default function Publications() {
             </p>
           </article>
 
-          {/* JNER — Rhythm Karaoke Stroke */}
+          {/* Rhythm Karaoke Stroke — submitted to Scientific Reports */}
           <article className="border-b border-gray-100 pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">
               <time className="text-gray-400">2026</time>
               <span className="text-gray-500 font-medium">
-                Journal of NeuroEngineering and Rehabilitation &middot; In preparation
+                Scientific Reports (Springer Nature) &middot; Submitted
               </span>
             </div>
             <h3 className="text-lg font-semibold leading-7 text-gray-900">

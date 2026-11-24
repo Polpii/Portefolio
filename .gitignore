@@ -46,3 +46,7 @@ public/Tangible/Tangible co-ideation final video V4.mp4
 # Private documents - served via /api/doc/ route
 public/**/*.pdf
 public/*.pdf
+
+# Raw source videos (web versions are *_web.mp4)
+public/Tangible/chi27a-sub7891-i91.mp4
+public/LightLanguage/LightLanguage.mp4

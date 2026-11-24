@@ -25,7 +25,7 @@ function MediaBlock({
   if (media.type === "video") {
     return (
       <video
-        className={`w-full rounded-xl border border-black/5 bg-[#0f172a] ${className}`}
+        className={`w-full max-h-[80vh] rounded-xl border border-black/5 bg-[#0f172a] ${className}`}
         controls
         autoPlay={priority}
         muted={priority}

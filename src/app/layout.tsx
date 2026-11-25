@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Paul-Peter Arslan",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <main className="min-h-screen">
           {children}
         </main>
+        <Analytics />
       </body>
     </html>
   );

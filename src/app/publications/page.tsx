@@ -156,6 +156,99 @@ export default function Publications() {
             <p className="mt-1 text-sm text-gray-500">* Equal contribution.</p>
           </article>
 
+          {/* Persistent Partners — arXiv preprint, under review */}
+          <article className="border-b border-gray-100 pb-10">
+            <div className="flex items-center gap-3 text-xs mb-3">
+              <time className="text-gray-400">2026</time>
+              <span className="text-gray-500 font-medium">
+                arXiv preprint &middot; Under review
+              </span>
+            </div>
+            <h3 className="text-lg font-semibold leading-7 text-gray-900">
+              Persistent Partners Raise Prices Among Learning Agents
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              <strong>Paul-Peter Arslan</strong>, Yubin Kim, Xiao Xiao.
+            </p>
+            <p className="mt-1 text-sm text-gray-500">
+              Pre-registered randomised experiment: keeping learning pricing
+              agents paired with the same partner raises profits and prices,
+              even when agents cannot see, and so cannot punish, a rival&apos;s
+              price cut.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-4">
+              <a
+                href="https://arxiv.org/abs/2609.35402"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View on arXiv
+              </a>
+              <a
+                href="/projects/persistent-partners"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View project page
+              </a>
+            </div>
+          </article>
+
+          {/* FaultLine — arXiv preprint, under review */}
+          <article className="border-b border-gray-100 pb-10">
+            <div className="flex items-center gap-3 text-xs mb-3">
+              <time className="text-gray-400">2026</time>
+              <span className="text-gray-500 font-medium">
+                arXiv preprint &middot; Under review
+              </span>
+            </div>
+            <h3 className="text-lg font-semibold leading-7 text-gray-900">
+              FaultLine: Audit Without Verification &mdash; When LLM
+              Accountability Layers Relay Rather Than Check
+            </h3>
+            <p className="mt-2 text-sm leading-6 text-gray-600">
+              <strong>Paul-Peter Arslan</strong>
+            </p>
+            <p className="mt-1 text-sm text-gray-500">
+              Pre-registered study of a six-agent, institutionally partitioned
+              LLM pipeline (345,600 requests); an external auditor reading
+              filed reports adopts the chain&apos;s own upstream conclusions
+              instead of verifying them. Pre-registered on OSF (DOI
+              10.17605/OSF.IO/GBR3V).
+            </p>
+            <div className="mt-3 flex flex-wrap gap-4">
+              <a
+                href="https://arxiv.org/abs/2609.07680"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View on arXiv
+              </a>
+              <a
+                href="/api/doc/FaultLine/faultline.pdf"
+                target="_blank"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View manuscript
+              </a>
+              <a
+                href="/projects/faultline"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View project page
+              </a>
+              <a
+                href="https://github.com/Polpii/FaultLine"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
+              >
+                View code
+              </a>
+            </div>
+          </article>
+
           {/* PolicyTown — independent research */}
           <article className="border-b border-gray-100 pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">
@@ -198,91 +291,6 @@ export default function Publications() {
                 className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
               >
                 View code
-              </a>
-            </div>
-          </article>
-
-          {/* FaultLine — independent research, submitted ICLR 2027 */}
-          <article className="border-b border-gray-100 pb-10">
-            <div className="flex items-center gap-3 text-xs mb-3">
-              <time className="text-gray-400">2026</time>
-              <span className="text-gray-500 font-medium">
-                Submitted to ICLR 2027 &middot; Preprint
-              </span>
-            </div>
-            <h3 className="text-lg font-semibold leading-7 text-gray-900">
-              FaultLine: Audit Without Verification &mdash; When LLM
-              Accountability Layers Relay Rather Than Check
-            </h3>
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              <strong>Paul-Peter Arslan</strong>
-            </p>
-            <p className="mt-1 text-sm text-gray-500">
-              Pre-registered study of a six-agent, institutionally partitioned
-              LLM pipeline (345,600 requests); an external auditor reading
-              filed reports adopts the chain&apos;s own upstream conclusions
-              instead of verifying them. Pre-registered on OSF (DOI
-              10.17605/OSF.IO/GBR3V).
-            </p>
-            <div className="mt-3 flex flex-wrap gap-4">
-              <a
-                href="/api/doc/FaultLine/faultline.pdf"
-                target="_blank"
-                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
-              >
-                View manuscript
-              </a>
-              <a
-                href="/projects/faultline"
-                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
-              >
-                View project page
-              </a>
-              <a
-                href="https://github.com/Polpii/FaultLine"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
-              >
-                View code
-              </a>
-            </div>
-          </article>
-
-          {/* Persistent Partners — arXiv preprint, under review */}
-          <article className="border-b border-gray-100 pb-10">
-            <div className="flex items-center gap-3 text-xs mb-3">
-              <time className="text-gray-400">2026</time>
-              <span className="text-gray-500 font-medium">
-                arXiv preprint &middot; Under review
-              </span>
-            </div>
-            <h3 className="text-lg font-semibold leading-7 text-gray-900">
-              Persistent Partners Raise Prices Among Learning Agents
-            </h3>
-            <p className="mt-2 text-sm leading-6 text-gray-600">
-              <strong>Paul-Peter Arslan</strong>, Yubin Kim, Xiao Xiao.
-            </p>
-            <p className="mt-1 text-sm text-gray-500">
-              Pre-registered randomised experiment: keeping learning pricing
-              agents paired with the same partner raises profits and prices,
-              even when agents cannot see, and so cannot punish, a rival&apos;s
-              price cut.
-            </p>
-            <div className="mt-3 flex flex-wrap gap-4">
-              <a
-                href="https://arxiv.org/abs/2609.35402"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
-              >
-                View on arXiv
-              </a>
-              <a
-                href="/projects/persistent-partners"
-                className="inline-block text-sm text-gray-900 underline decoration-gray-300 underline-offset-4 hover:decoration-gray-900"
-              >
-                View project page
               </a>
             </div>
           </article>
@@ -361,11 +369,13 @@ export default function Publications() {
             <p className="mt-1 text-sm text-gray-500">Submitted Feb. 2026.</p>
           </article>
 
-          {/* Co-authored — Motor Unit Coherence in prep */}
+          {/* Co-authored — Motor Unit Coherence, submitted to Scientific Reports */}
           <article className="pb-10">
             <div className="flex items-center gap-3 text-xs mb-3">
               <time className="text-gray-400">2026</time>
-              <span className="text-gray-500 font-medium">In preparation</span>
+              <span className="text-gray-500 font-medium">
+                Scientific Reports (Springer Nature) &middot; Submitted
+              </span>
             </div>
             <h3 className="text-lg font-semibold leading-7 text-gray-900">
               Motor Unit Coherence and Discharge Behavior During Single-Finger Isometric Contractions After Stroke

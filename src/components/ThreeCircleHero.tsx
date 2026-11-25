@@ -5,11 +5,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 type Zone =
-  | "health"
+  | "behavior"
   | "design"
   | "ai"
-  | "health-design"
-  | "health-ai"
+  | "behavior-design"
+  | "behavior-ai"
   | "design-ai"
   | "center"
   | null;
@@ -18,17 +18,15 @@ const zoneContent: Record<
   Exclude<Zone, null>,
   { label: string; projects: { name: string; href: string }[] }
 > = {
-  health: {
-    label: "Health",
+  behavior: {
+    label: "Behavior",
     projects: [
-      { name: "HD-EMG Decoding", href: "/projects/hd-emg-ai" },
       { name: "Rhythm Karaoke", href: "/projects/rhythm-karaoke" },
     ],
   },
   design: {
     label: "Design",
     projects: [
-      { name: "Tangible Co-Ideation", href: "/projects/tangible-co-ideation" },
       { name: "Finger Spies", href: "/projects/finger-spies" },
       { name: "Second Self", href: "/projects/second-self" },
     ],
@@ -39,15 +37,18 @@ const zoneContent: Record<
       { name: "IPheromone", href: "/projects/ipheromone" },
     ],
   },
-  "health-design": {
-    label: "Health + Design",
+  "behavior-design": {
+    label: "Behavior + Design",
     projects: [
       { name: "ReTouche", href: "/projects/retouche" },
     ],
   },
-  "health-ai": {
-    label: "Health + AI",
+  "behavior-ai": {
+    label: "Behavior + AI",
     projects: [
+      { name: "Persistent Partners", href: "/projects/persistent-partners" },
+      { name: "FaultLine", href: "/projects/faultline" },
+      { name: "PolicyTown", href: "/projects/policy-town" },
       { name: "HD-EMG Decoding", href: "/projects/hd-emg-ai" },
     ],
   },
@@ -55,7 +56,7 @@ const zoneContent: Record<
     label: "Design + AI",
     projects: [
       { name: "Tangible Co-Ideation", href: "/projects/tangible-co-ideation" },
-      { name: "IPheromone", href: "/projects/ipheromone" },
+      { name: "Light Language", href: "/projects/light-language" },
     ],
   },
   center: {
@@ -99,15 +100,15 @@ export default function ThreeCircleHero() {
         {/* Left — text */}
         <div className="max-w-xl">
           <p className="text-sm text-gray-500">
-            HCI Researcher &middot; Embodied Interaction &middot; Neurorehabilitation
+            HCI Researcher &middot; Human-AI Interaction &middot; Simulation of AI Agents
           </p>
           <h1 className="mt-3 text-4xl font-bold tracking-tight text-gray-950 sm:text-5xl lg:text-[3.25rem] lg:leading-[1.15]">
             Paul-Peter Arslan
           </h1>
           <p className="mt-5 text-base leading-7 text-gray-500">
-            I design interactions that help people believe in their own
-            potential, from embodied learning systems to AI-augmented
-            rehabilitation tools.
+            I build new ways for people to work with AI, study how they use
+            them, and simulate how AI agents behave before they reach
+            people.
           </p>
 
           <nav className="mt-8 flex gap-6 text-sm">
@@ -138,10 +139,10 @@ export default function ThreeCircleHero() {
           </nav>
 
           <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-1 text-[13px] text-gray-400">
-            <li>Human-Computer Interaction</li>
+            <li>Human-AI Interaction</li>
             <li>Embodied Design</li>
-            <li>Health &amp; Rehabilitation</li>
-            <li>AI</li>
+            <li>Human Behavior</li>
+            <li>Multi-Agent Simulation</li>
           </ul>
         </div>
 
@@ -155,7 +156,7 @@ export default function ThreeCircleHero() {
             >
               {/* Clip paths for intersections */}
               <defs>
-                <clipPath id="clip-health">
+                <clipPath id="clip-behavior">
                   <circle cx={TOP.cx} cy={TOP.cy} r={R} />
                 </clipPath>
                 <clipPath id="clip-design">
@@ -169,8 +170,8 @@ export default function ThreeCircleHero() {
               {/* Circle outlines */}
               <circle
                 cx={TOP.cx} cy={TOP.cy} r={R}
-                fill={circleFill("health")}
-                stroke={circleStroke("health")}
+                fill={circleFill("behavior")}
+                stroke={circleStroke("behavior")}
                 strokeWidth="1"
               />
               <circle
@@ -187,12 +188,12 @@ export default function ThreeCircleHero() {
               />
 
               {/* Intersection zones — invisible hit areas */}
-              {/* Health only (top area outside overlaps) */}
+              {/* Behavior only (top area outside overlaps) */}
               <circle
                 cx={TOP.cx} cy={TOP.cy - 30} r={50}
                 fill="transparent"
                 className="cursor-pointer"
-                onMouseEnter={() => setActive("health")}
+                onMouseEnter={() => setActive("behavior")}
               />
               {/* Design only (bottom-left) */}
               <circle
@@ -209,22 +210,22 @@ export default function ThreeCircleHero() {
                 onMouseEnter={() => setActive("ai")}
               />
 
-              {/* Health + Design intersection (left overlap) */}
-              <g clipPath="url(#clip-health)">
+              {/* Behavior + Design intersection (left overlap) */}
+              <g clipPath="url(#clip-behavior)">
                 <circle
                   cx={BL.cx} cy={BL.cy} r={R}
-                  fill={active === "health-design" ? "#f3f4f6" : "transparent"}
+                  fill={active === "behavior-design" ? "#f3f4f6" : "transparent"}
                   className="cursor-pointer"
-                  onMouseEnter={() => setActive("health-design")}
+                  onMouseEnter={() => setActive("behavior-design")}
                 />
               </g>
-              {/* Health + AI intersection (right overlap) */}
-              <g clipPath="url(#clip-health)">
+              {/* Behavior + AI intersection (right overlap) */}
+              <g clipPath="url(#clip-behavior)">
                 <circle
                   cx={BR.cx} cy={BR.cy} r={R}
-                  fill={active === "health-ai" ? "#f3f4f6" : "transparent"}
+                  fill={active === "behavior-ai" ? "#f3f4f6" : "transparent"}
                   className="cursor-pointer"
-                  onMouseEnter={() => setActive("health-ai")}
+                  onMouseEnter={() => setActive("behavior-ai")}
                 />
               </g>
               {/* Design + AI intersection (bottom overlap) */}
@@ -238,7 +239,7 @@ export default function ThreeCircleHero() {
               </g>
 
               {/* Center intersection — triple overlap, goes to About */}
-              <g clipPath="url(#clip-health)">
+              <g clipPath="url(#clip-behavior)">
                 <g clipPath="url(#clip-design)">
                   <circle
                     cx={BR.cx} cy={BR.cy} r={R}
@@ -255,17 +256,17 @@ export default function ThreeCircleHero() {
                 x={TOP.cx} y={TOP.cy - 48}
                 textAnchor="middle"
                 className={`text-[12px] font-medium uppercase tracking-[0.1em] select-none ${
-                  active === "health" || active === "health-design" || active === "health-ai" || active === "center"
+                  active === "behavior" || active === "behavior-design" || active === "behavior-ai" || active === "center"
                     ? "fill-gray-700" : "fill-gray-400"
                 }`}
               >
-                Health
+                Behavior
               </text>
               <text
                 x={BL.cx - 28} y={BL.cy + 40}
                 textAnchor="middle"
                 className={`text-[12px] font-medium uppercase tracking-[0.1em] select-none ${
-                  active === "design" || active === "health-design" || active === "design-ai" || active === "center"
+                  active === "design" || active === "behavior-design" || active === "design-ai" || active === "center"
                     ? "fill-gray-700" : "fill-gray-400"
                 }`}
               >
@@ -275,7 +276,7 @@ export default function ThreeCircleHero() {
                 x={BR.cx + 28} y={BR.cy + 40}
                 textAnchor="middle"
                 className={`text-[12px] font-medium uppercase tracking-[0.1em] select-none ${
-                  active === "ai" || active === "health-ai" || active === "design-ai" || active === "center"
+                  active === "ai" || active === "behavior-ai" || active === "design-ai" || active === "center"
                     ? "fill-gray-700" : "fill-gray-400"
                 }`}
               >
@@ -304,14 +305,14 @@ export default function ThreeCircleHero() {
               )}
 
               {/* Intersection labels */}
-              {active === "health-design" && (
+              {active === "behavior-design" && (
                 <text x="195" y="240" textAnchor="middle" className="fill-gray-500 text-[10px] select-none">
-                  Health + Design
+                  Behavior + Design
                 </text>
               )}
-              {active === "health-ai" && (
+              {active === "behavior-ai" && (
                 <text x="305" y="240" textAnchor="middle" className="fill-gray-500 text-[10px] select-none">
-                  Health + AI
+                  Behavior + AI
                 </text>
               )}
               {active === "design-ai" && (

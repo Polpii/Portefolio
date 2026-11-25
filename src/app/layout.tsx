@@ -5,18 +5,18 @@ import Navigation from "@/components/Navigation";
 export const metadata: Metadata = {
   title: "Paul-Peter Arslan",
   description:
-    "Portfolio spanning embodied AI, interaction design, neurorehabilitation research, and experimental systems.",
+    "Portfolio spanning human-AI interaction, embodied design, models of human behavior, and simulation of AI agents.",
   openGraph: {
-    title: "Paul-Peter Arslan | Embodied AI and Interaction Design",
+    title: "Paul-Peter Arslan | Human-AI Interaction and Simulation",
     description:
-      "Portfolio spanning embodied AI, interaction design, neurorehabilitation research, and experimental systems.",
+      "Portfolio spanning human-AI interaction, embodied design, models of human behavior, and simulation of AI agents.",
     images: ["/og-image.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paul-Peter Arslan | Embodied AI and Interaction Design",
+    title: "Paul-Peter Arslan | Human-AI Interaction and Simulation",
     description:
-      "Portfolio spanning embodied AI, interaction design, neurorehabilitation research, and experimental systems.",
+      "Portfolio spanning human-AI interaction, embodied design, models of human behavior, and simulation of AI agents.",
     images: ["/og-image.png"],
   },
 };

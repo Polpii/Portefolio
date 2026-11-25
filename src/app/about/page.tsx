@@ -28,7 +28,7 @@ export default function About() {
                 Paul-Peter Arslan
               </h1>
               <p className="mt-2 text-base text-gray-500">
-                HCI Researcher &middot; Embodied Interaction &middot; Neurorehabilitation
+                HCI Researcher &middot; Human-AI Interaction &middot; Simulation of AI Agents
               </p>
 
               <div className="mt-8 space-y-5 text-[15px] leading-7 text-gray-700">
